@@ -45,7 +45,7 @@ class LinkedList:
         while(temp):
             print(str(temp.data))
             temp = temp.next
-
+            
     def countNodes(self):
         temp = self.head
         count = 0
