@@ -1,5 +1,7 @@
 class ArrayQueue:
 
+    # follow LIFO principle
+
     DEFAULT_CAPACITY = 10
 
     def __init__(self):
