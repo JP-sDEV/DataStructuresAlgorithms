@@ -46,4 +46,3 @@ class LinkedStack():
             self._head = self._head._next
             self._size -= 1
             return answer
-        
