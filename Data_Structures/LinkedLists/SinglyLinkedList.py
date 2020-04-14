@@ -54,12 +54,37 @@ class LinkedList:
             temp = temp.next
         return count
 
+    
+    def before_and_end(self):
+        end = self.head
+        before_end = None
+
+        while end:
+            before_end = end
+            end = end.next
+            print (str("{},{}\n".format(before_end.data, end.data)))
+    
+    def switch(self):
+        end = self.head
+        before_end = None
+        e3 = None
+
+        while end.next:
+            e3 = before_end
+            before_end = end
+            end = end.next
+            print (str("before: {},{}\n".format(before_end.data, end.data)))
+            end.next = before_end
+            before_end.next = e3
+            print (str("after: {},{}\n".format(before_end.data, end.data)))
+
+
 
 # llist = 12 -> 3 -> 1 -> 2 -> 90
 llist = LinkedList()
-llist.append(12)
-llist.append(3)
 llist.append(1)
 llist.append(2)
-llist.append(90)
-print(llist.printLList())
+llist.append(3)
+llist.append(4)
+llist.append(5)
+# print(llist.printLList())
